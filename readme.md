@@ -1,6 +1,7 @@
 # Mobile test automation using appium, ruby, cucumber
 
 Provided two options to run the mobile test automation framework
+
  Option 1: Start from a machine where appium server installed and emulator is available
  Option 2: Start using docker container. [provided Dockerfile in the same project directory]
 
