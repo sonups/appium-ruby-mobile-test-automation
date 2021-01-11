@@ -87,5 +87,5 @@ Ensure docker is installed and available in your command line
 
 	  Sample report:
     
-	  ![](https://github.com/sonups/vivino-mobile-test-automation/blob/master/repository_images/2.JPG)
+	  ![](https://github.com/sonups/vivino-mobile-test-automation/blob/master/repository_images/2.jpg)
 	  	
