@@ -22,10 +22,13 @@ Provided two options to run the mobile test automation framework
   4. Optionally it is required to update ruby gems. Update gems by issuing the below command. This could take a while!!. Try by cleaning unwanted gems by 2nd commands
   
   `gem update`
+  
   `bundle clean --force`
     
   5. Use the below commands to uninstall and then properly install eventmachine ruby gem. There is a known issue. This step is required only for windows machines 
+  
   `gem uninstall eventmachine`
+  
   `gem install eventmachine --platform ruby`
   
   6. Start the appium server locally in port 4723
