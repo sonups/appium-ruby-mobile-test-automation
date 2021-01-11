@@ -75,7 +75,7 @@ Ensure docker is installed and available in your command line
   6. Launch a mobile emulator [AVD from Android / Genymotion] - Tested execution with Android API - 24 / Samsung Nexus 5X emulated device
   7. Start the execution by issuing the below command
   
-      `docker run -i -d vivino-mobile-test-automation sleep infinity`
+      `docker run -t -d vivino-mobile-test-automation`
       
   8. Fetch the id of the last invoked container from the below command
   
