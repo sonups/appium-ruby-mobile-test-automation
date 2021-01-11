@@ -11,7 +11,8 @@ Provided two options to run the mobile test automation framework
  Install ruby in your machine. Ensure ruby is available by using ruby -v
  In windows we can use a ruby version manager called pik
 
-#####Steps:
+	####Steps:
+ 
 
   1. Clone the repository in a local folder
   2. Open a shell console to the cloned directory
@@ -39,7 +40,10 @@ Provided two options to run the mobile test automation framework
   
 The reports are generated in the folder : /results/report
 
-####Option 2: [Run using docker ] 
+####Option 2: 
+
+[Run using docker ] 
+
 Here we are building a docker image locally. We need to provide the ip of the  ethernet adapter interface for docker . In image below , the ip address is captured using ipconfig command (In windows) [ifconfig (in linux)]
 
 Note: This will enable the docker container to route the appium http request to the appium server running locally.
