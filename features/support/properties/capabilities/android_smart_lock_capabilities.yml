@@ -1,0 +1,13 @@
+:caps:
+  :platformName: 'Android'
+  #:deviceName: 'Nexus5X'
+  #:browserName: ''
+  #:app: 'https://testingbot.com/appium/sample.apk'
+  #TODO add app activity
+  :package: 'com.google.android.gms'
+  :appActivity: 'com.google.android.gms.auth.api.credentials.ui.CredentialPickerActivity'
+  #:newCommandTimeout: 300
+  :automationName: "UiAutomator2"
+:appium_lib:
+  :wait_timeout: 30,
+  :wait_interval: 1

@@ -1,0 +1,8 @@
+app_url:
+ android_local:
+ # TODO: Associate the app package with the path to the local build, we used this to reference the hosted build when running the tests on the same Jenkins box that hosted the build
+  your.package.here: http://localhost:8080/path/to/your/build.apk
+
+ android_external:
+  # TODO: Associate the app package with the path to the build
+  your.package.here: http://99.99.99.99:8080/job/build.apk

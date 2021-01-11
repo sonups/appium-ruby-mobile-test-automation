@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+gem 'activesupport', '4.1.11'
+gem 'appium_lib', '11.1.0'
+gem 'cucumber', '2.4'
+gem 'eventmachine', '~> 1.2', '>= 1.2.0.1'
+gem 'factory_girl', '~> 4.5'
+gem 'ffi', '~> 1.14', '>= 1.14.2'
+gem 'minitest', '5.1'
+gem 'pretty_face'
+gem 'pry', '0.9.12.6'
+gem 'pry-nav', '0.2.3'
+gem 'rake', '12.3.1'
+gem 'report_builder', '1.8'
+gem 'rspec', '3.7.0'
+gem 'rspec-expectations', '3.7.0'
+gem 'selenium-webdriver', '3.142.7'

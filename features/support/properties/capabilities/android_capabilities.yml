@@ -1,0 +1,14 @@
+:caps:
+  :platformName: 'Android'
+  :platformVersion: '7.0'
+  :deviceName: 'Nexus5X_duplicate'
+  :noReset: true
+  :appPackage: 'vivino.web.app.beta'
+  :appActivity: 'com.sphinx_solution.activities.SplashActivity'
+  :newCommandTimeout: 300
+  :automationName: "UiAutomator2"
+  #:browserName: ''
+:appium_lib:
+  :server_url: 'http://192.168.128.1:4723/wd/hub'
+  :wait_timeout: 30,
+  :wait_interval: 1

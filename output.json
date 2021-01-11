@@ -1,0 +1,87 @@
+[
+  {
+    "uri": "features/launch_test/top_charts.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "  In top charts feature, user should be able to browse best wines on display",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14500
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:106"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://127.0.0.1:4723/wd/hub? (RuntimeError)\n./features/support/base_driver.rb:21:in `start_driver'\n./features/support/driver_hook.rb:21:in `setup_driver'\n./features/step_definitions/sample_steps.rb:108:in `/^I open the app and the app's main page is displayed$/'\nfeatures/launch_test/top_charts.feature:5:in `Given I open the app and the app's main page is displayed'",
+              "duration": 2059719000
+            }
+          }
+        ]
+      },
+      {
+        "id": ";create-an-account-in-vivino-beta-app-by-clicking-get-started-button-in-app-welcome-page",
+        "keyword": "Scenario",
+        "name": "Create an account in vivino beta app by clicking Get started button in app welcome page",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@top-charts-test",
+            "line": 7
+          },
+          {
+            "name": "@all",
+            "line": 8
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on Get Started button in WelcomePage",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/sample_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24300
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+
+all-tags: --tags @all --format json -o results\json\output.json
+account_creation: --tags @account-creation --format json -o results\json\output.json
+account_login: --tags @account-login --format json-o results\json\output.json
+all-tags-html-report: --tags @all  --format html -o results\html\report.html
+account_creation-html-report: --tags @account-creation  --format html -o results\html\report.html
+account_login-html-report: --tags @account-login  --format html -o results\html\report.html
