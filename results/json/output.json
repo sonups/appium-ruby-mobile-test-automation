@@ -1,0 +1,694 @@
+[
+  {
+    "uri": "features/launch_test/account_login.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "  A user should be able to create an account, login, delete his account and signout from vivino app",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "ERROR: Unable to connect to Appium. Is the server running on http://192.168.128.1:4723/wd/hub? (RuntimeError)\n./features/support/base_driver.rb:23:in `start_driver'\n./features/support/driver_hook.rb:22:in `setup_driver'\n./features/step_definitions/common_steps.rb:40:in `/^I open the app and the app's main page is displayed$/'\nfeatures/launch_test/account_login.feature:5:in `Given I open the app and the app's main page is displayed'",
+              "duration": 2096091900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";as-a-user-i-should-be-able-to-login-to-vivino-app",
+        "keyword": "Scenario",
+        "name": "As a user I should be able to login to vivino app",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 8
+          },
+          {
+            "name": "@account-login",
+            "line": 8
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on I have an account button in WelcomePage",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type test@gmail.com as email and Welcome123 as password in welcome page",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50500
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `driver' for DriverHook:Class (NoMethodError)\n./features/step_definitions/common_steps.rb:10:in `/^I logout from the application if already logged in$/'\nfeatures/launch_test/account_login.feature:6:in `And I logout from the application if already logged in'",
+              "duration": 167900
+            }
+          }
+        ]
+      },
+      {
+        "id": ";i-should-be-able-to-login-to-vivino-app-using-multiple-logins;;2",
+        "keyword": "Scenario Outline",
+        "name": "I should be able to login to vivino app using multiple logins",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 14
+          },
+          {
+            "name": "@account-login",
+            "line": 14
+          },
+          {
+            "name": "@account-login-multiple",
+            "line": 14
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on I have an account button in WelcomePage",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type test@gmail.com as email and Welcome123 as password in welcome page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19900
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `driver' for DriverHook:Class (NoMethodError)\n./features/step_definitions/common_steps.rb:10:in `/^I logout from the application if already logged in$/'\nfeatures/launch_test/account_login.feature:6:in `And I logout from the application if already logged in'",
+              "duration": 78800
+            }
+          }
+        ]
+      },
+      {
+        "id": ";i-should-be-able-to-login-to-vivino-app-using-multiple-logins;;3",
+        "keyword": "Scenario Outline",
+        "name": "I should be able to login to vivino app using multiple logins",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 14
+          },
+          {
+            "name": "@account-login",
+            "line": 14
+          },
+          {
+            "name": "@account-login-multiple",
+            "line": 14
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on I have an account button in WelcomePage",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type test@gmail.com as email and Welcome123 as password in welcome page",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/launch_test/register_account.feature",
+    "id": "",
+    "keyword": "Feature",
+    "name": "",
+    "description": "  A user should be able to create an account, login, delete his account and signout from vivino app",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27800
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `driver' for DriverHook:Class (NoMethodError)\n./features/step_definitions/common_steps.rb:10:in `/^I logout from the application if already logged in$/'\nfeatures/launch_test/register_account.feature:6:in `And I logout from the application if already logged in'",
+              "duration": 140200
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on Need a account button if currently in Welcome back page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";create-an-account-in-vivino-beta-app-by-clicking-get-started-button-in-app-welcome-page",
+        "keyword": "Scenario",
+        "name": "Create an account in vivino beta app by clicking Get started button in app welcome page",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 9
+          },
+          {
+            "name": "@account-creation",
+            "line": 9
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on Get Started button in WelcomePage",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type auto-generated email with below password in create account page",
+            "line": 12,
+            "rows": [
+              {
+                "cells": [
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "Welcome123"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type Crisitiano as First name and Ronaldo as Last Name in New profile page",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I ensure to accept terms and proceed from New profile page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21400
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `driver' for DriverHook:Class (NoMethodError)\n./features/step_definitions/common_steps.rb:10:in `/^I logout from the application if already logged in$/'\nfeatures/launch_test/register_account.feature:6:in `And I logout from the application if already logged in'",
+              "duration": 93600
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on Need a account button if currently in Welcome back page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";i-should-be-able-to-create-multiple-users-in-vivino-beta;;2",
+        "keyword": "Scenario Outline",
+        "name": "I should be able to create multiple users in vivino beta",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 19
+          },
+          {
+            "name": "@account-creation",
+            "line": 19
+          },
+          {
+            "name": "@account-creation-multiple",
+            "line": 19
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on Get Started button in WelcomePage",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type auto-generated email with below password in create account page",
+            "line": 31,
+            "rows": [
+              {
+                "cells": [
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "Welcome123"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type N'Golo as First name and Kante as Last Name in New profile page",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I ensure to accept terms and proceed from New profile page",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 31,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I open the app and the app's main page is displayed",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23300
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I logout from the application if already logged in",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/common_steps.rb:9"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `driver' for DriverHook:Class (NoMethodError)\n./features/step_definitions/common_steps.rb:10:in `/^I logout from the application if already logged in$/'\nfeatures/launch_test/register_account.feature:6:in `And I logout from the application if already logged in'",
+              "duration": 90700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on Need a account button if currently in Welcome back page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:27"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": ";i-should-be-able-to-create-multiple-users-in-vivino-beta;;3",
+        "keyword": "Scenario Outline",
+        "name": "I should be able to create multiple users in vivino beta",
+        "description": "",
+        "line": 32,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 19
+          },
+          {
+            "name": "@account-creation",
+            "line": 19
+          },
+          {
+            "name": "@account-creation-multiple",
+            "line": 19
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I click on Get Started button in WelcomePage",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/welcome_page_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type auto-generated email with below password in create account page",
+            "line": 32,
+            "rows": [
+              {
+                "cells": [
+                  "Password"
+                ]
+              },
+              {
+                "cells": [
+                  "Welcome123"
+                ]
+              }
+            ],
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I type Van as First name and Dijk as Last Name in New profile page",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:24"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I ensure to accept terms and proceed from New profile page",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/account_create_steps.rb:29"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify the main page is displayed",
+            "line": 32,
+            "match": {
+              "location": "features/step_definitions/main_page_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

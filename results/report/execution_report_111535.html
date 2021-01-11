@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>My Test Results</title><link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="brown lighten-5">
+<div class="row brown lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="My Test Results">My Test Results</h5>
+</div><div class="col m6 s12 brown lighten-1">
+<ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-creation</div><h5>Create an account in vivino beta app by clicking Get started button in app welcome page (26.960s)</h5>
+features/launch_test/register_account.feature:10<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (11.702s)</li>
+<li class="collection-item step passed">
+<b>And </b> I click on Need a account button if currently in Welcome back page (Background) (0.299s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on Get Started button in WelcomePage (0.031s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type auto-generated email with below password in create account page (4.481s)<br/>| Password | 
+<br/>| Welcome123 | 
+</li>
+<li class="collection-item step passed">
+<b>And </b> I type Crisitiano as First name and Ronaldo as Last Name in New profile page (4.052s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I ensure to accept terms and proceed from New profile page (1.703s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (4.691s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-creation</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-creation-multiple</div><h5>I should be able to create multiple users in vivino beta (28.974s)</h5>
+features/launch_test/register_account.feature:31<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (13.882s)</li>
+<li class="collection-item step passed">
+<b>And </b> I click on Need a account button if currently in Welcome back page (Background) (0.318s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on Get Started button in WelcomePage (0.303s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type auto-generated email with below password in create account page (3.691s)<br/>| Password | 
+<br/>| Welcome123 | 
+</li>
+<li class="collection-item step passed">
+<b>And </b> I type N&#39;Golo as First name and Kante as Last Name in New profile page (4.090s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I ensure to accept terms and proceed from New profile page (1.696s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (4.995s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-creation</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-creation-multiple</div><h5>I should be able to create multiple users in vivino beta (27.426s)</h5>
+features/launch_test/register_account.feature:32<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (13.021s)</li>
+<li class="collection-item step passed">
+<b>And </b> I click on Need a account button if currently in Welcome back page (Background) (0.301s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on Get Started button in WelcomePage (0.032s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type auto-generated email with below password in create account page (4.013s)<br/>| Password | 
+<br/>| Welcome123 | 
+</li>
+<li class="collection-item step passed">
+<b>And </b> I type Van as First name and Dijk as Last Name in New profile page (3.983s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I ensure to accept terms and proceed from New profile page (1.693s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (4.382s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-login</div><h5>As a user I should be able to login to vivino app (33.185s)</h5>
+features/launch_test/account_login.feature:9<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (7.072s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (15.696s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on I have an account button in WelcomePage (0.032s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type test@gmail.com as email and Welcome123 as password in welcome page (2.625s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (7.759s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-login</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-login-multiple</div><h5>I should be able to login to vivino app using multiple logins (22.875s)</h5>
+features/launch_test/account_login.feature:21<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (12.898s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on I have an account button in WelcomePage (0.031s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type test@gmail.com as email and Welcome123 as password in welcome page (2.586s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (7.360s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@all</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-login</div><div class="chip"><i class="material-icons rotate-45">label</i>@account-login-multiple</div><h5>I should be able to login to vivino app using multiple logins (21.769s)</h5>
+features/launch_test/account_login.feature:22<ul class="collection stepList"><li class="collection-item step passed">
+<b>Given </b> I open the app and the app&#39;s main page is displayed (Background) (0.000s)</li>
+<li class="collection-item step passed">
+<b>And </b> I logout from the application if already logged in (Background) (11.889s)</li>
+<li class="collection-item step passed">
+<b>Given </b> I click on I have an account button in WelcomePage (0.016s)</li>
+<li class="collection-item step passed">
+<b>And </b> I type test@gmail.com as email and Welcome123 as password in welcome page (2.617s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I verify the main page is displayed (7.247s)</li>
+</ul>
+</div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();$('#g0f1s2').modal();$('#g0f1s3').modal();});
+</script>
+<main class="brown lighten-5">
+<div class="row"><div id="overview" class="col s12 brown lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>2m 41.19s</td></tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 brown lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;&nbsp;(1m 23.36s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> Create an account in vivino beta app by clicking Get started button in app welcome page&nbsp;(26.960s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
+<b>Scenario Outline</b> I should be able to create multiple users in vivino beta&nbsp;(28.974s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
+<b>Scenario Outline</b> I should be able to create multiple users in vivino beta&nbsp;(27.426s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;&nbsp;(1m 17.83s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
+<b>Scenario</b> As a user I should be able to login to vivino app&nbsp;(33.185s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s1">
+<b>Scenario Outline</b> I should be able to login to vivino app using multiple logins&nbsp;(22.875s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s2">
+<b>Scenario Outline</b> I should be able to login to vivino app using multiple logins&nbsp;(21.769s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 brown lighten-5">
+<table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">Create an account in vivino beta app by clicking Get started button in app welcome page</a>
+</td><td class="hide">
+@all. @account-creation. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s1">I should be able to create multiple users in vivino beta</a>
+</td><td class="hide">
+@all. @account-creation. @account-creation-multiple. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s2">I should be able to create multiple users in vivino beta</a>
+</td><td class="hide">
+@all. @account-creation. @account-creation-multiple. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">As a user I should be able to login to vivino app</a>
+</td><td class="hide">
+@all. @account-login. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s1">I should be able to login to vivino app using multiple logins</a>
+</td><td class="hide">
+@all. @account-login. @account-login-multiple. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only"></td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s2">I should be able to login to vivino app using multiple logins</a>
+</td><td class="hide">
+@all. @account-login. @account-login-multiple. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 brown lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer brown lighten-4">
+<div class="footer-copyright brown lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.8/js/report.builder.min.js"></script></body>
+</html>
