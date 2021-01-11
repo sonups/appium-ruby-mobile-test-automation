@@ -62,6 +62,9 @@ Ensure docker is installed and available in your command line
       `docker image ls`
       
   5. Start the appium server locally in port 4723
+  
+  ![](https://github.com/sonups/vivino-mobile-test-automation/blob/master/repository_images/1.JPG)
+  
   6. Launch a mobile emulator [AVD from Android / Genymotion] - Tested execution with Android API - 24 / Samsung Nexus 5X emulated device
   7. Start the execution by issuing the below command
   
@@ -84,5 +87,5 @@ Ensure docker is installed and available in your command line
 
 	  Sample report:
     
-	  ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+	  ![](https://github.com/sonups/vivino-mobile-test-automation/blob/master/repository_images/2.JPG)
 	  	
